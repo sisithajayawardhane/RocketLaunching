@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rocket_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkBlueBG" translatesAutoresizingMaskIntoConstraints="NO" id="jOc-cg-6Ea">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSo-RA-CsM">
+                                <rect key="frame" x="159" y="320" width="96" height="96"/>
+                                <state key="normal" image="powerButton"/>
+                                <connections>
+                                    <action selector="PowerBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCf-WR-mqd"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYb-rj-9Jp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rocketAndStream" translatesAutoresizingMaskIntoConstraints="NO" id="8w8-EQ-I8r">
+                                        <rect key="frame" x="0.0" y="444" width="414" height="687"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="687" id="ILl-sB-rFr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudsAndOrangeOval" translatesAutoresizingMaskIntoConstraints="NO" id="5gu-n3-UdM">
+                                        <rect key="frame" x="0.0" y="210" width="414" height="896"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="896" id="P6o-e0-IYY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HUSTLE MODE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgl-6U-IFW">
+                                        <rect key="frame" x="101" y="615.5" width="212" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="85" id="XM5-Im-N4n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKF-Oq-Z82">
+                                        <rect key="frame" x="92" y="708.5" width="230" height="116"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="97"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3529411764705882" green="0.56470588235294117" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wgl-6U-IFW" secondAttribute="bottom" constant="195" id="4Z5-5k-Z0A"/>
+                                    <constraint firstItem="wKF-Oq-Z82" firstAttribute="leading" secondItem="zYb-rj-9Jp" secondAttribute="leading" constant="92" id="5sr-wl-cXi"/>
+                                    <constraint firstItem="8w8-EQ-I8r" firstAttribute="top" secondItem="zYb-rj-9Jp" secondAttribute="top" constant="444" id="6hu-an-qia"/>
+                                    <constraint firstItem="5gu-n3-UdM" firstAttribute="top" secondItem="zYb-rj-9Jp" secondAttribute="top" constant="210" id="8Y5-wd-Wj0"/>
+                                    <constraint firstItem="wgl-6U-IFW" firstAttribute="centerX" secondItem="8w8-EQ-I8r" secondAttribute="centerX" id="8wV-FD-iNc"/>
+                                    <constraint firstItem="wKF-Oq-Z82" firstAttribute="centerX" secondItem="wgl-6U-IFW" secondAttribute="centerX" id="MQ8-qC-fRP"/>
+                                    <constraint firstItem="8w8-EQ-I8r" firstAttribute="leading" secondItem="zYb-rj-9Jp" secondAttribute="leading" id="WZr-lr-A5j"/>
+                                    <constraint firstItem="wgl-6U-IFW" firstAttribute="centerX" secondItem="zYb-rj-9Jp" secondAttribute="centerX" id="XkA-7l-ssO"/>
+                                    <constraint firstItem="wKF-Oq-Z82" firstAttribute="top" secondItem="wgl-6U-IFW" secondAttribute="bottom" constant="8" symbolic="YES" id="aPn-YD-z8q"/>
+                                    <constraint firstItem="5gu-n3-UdM" firstAttribute="centerY" secondItem="wgl-6U-IFW" secondAttribute="centerY" id="gV1-7b-dja"/>
+                                    <constraint firstItem="5gu-n3-UdM" firstAttribute="leading" secondItem="8w8-EQ-I8r" secondAttribute="leading" id="j18-v0-56M"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jOc-cg-6Ea" secondAttribute="trailing" id="9gK-Rh-uGd"/>
+                            <constraint firstAttribute="trailing" secondItem="jOc-cg-6Ea" secondAttribute="trailing" id="BP0-Hb-gmG"/>
+                            <constraint firstItem="jOc-cg-6Ea" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GNB-NM-CRe"/>
+                            <constraint firstAttribute="bottom" secondItem="jOc-cg-6Ea" secondAttribute="bottom" id="OkM-KA-qEr"/>
+                            <constraint firstItem="jOc-cg-6Ea" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TUG-HN-0bI"/>
+                            <constraint firstItem="jOc-cg-6Ea" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tbc-5z-4Bm"/>
+                            <constraint firstItem="zYb-rj-9Jp" firstAttribute="top" secondItem="jOc-cg-6Ea" secondAttribute="top" id="VBk-de-5qt"/>
+                            <constraint firstItem="zYb-rj-9Jp" firstAttribute="centerY" secondItem="gSo-RA-CsM" secondAttribute="centerY" id="Xc9-qt-omx"/>
+                            <constraint firstItem="zYb-rj-9Jp" firstAttribute="bottom" secondItem="jOc-cg-6Ea" secondAttribute="bottom" id="c4V-9j-xQK"/>
+                            <constraint firstItem="jOc-cg-6Ea" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="g7I-I8-5kH"/>
+                            <constraint firstItem="zYb-rj-9Jp" firstAttribute="leading" secondItem="jOc-cg-6Ea" secondAttribute="leading" id="gbg-Ke-Jac"/>
+                            <constraint firstItem="zYb-rj-9Jp" firstAttribute="centerX" secondItem="gSo-RA-CsM" secondAttribute="centerX" id="pLr-kV-r3z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="CloudHolder" destination="zYb-rj-9Jp" id="h1F-OR-3Zs"/>
+                        <outlet property="DarkBlueBG" destination="jOc-cg-6Ea" id="gCg-uv-ZvF"/>
+                        <outlet property="HustleLBL" destination="wgl-6U-IFW" id="yN3-Zz-0dh"/>
+                        <outlet property="OnLBL" destination="wKF-Oq-Z82" id="vfZ-oB-p68"/>
+                        <outlet property="PowerButton" destination="gSo-RA-CsM" id="Kxw-PI-h0U"/>
+                        <outlet property="Rocket" destination="8w8-EQ-I8r" id="zlw-xe-0yA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloudsAndOrangeOval" width="414" height="477"/>
+        <image name="darkBlueBG" width="414" height="736"/>
+        <image name="powerButton" width="96" height="96"/>
+        <image name="rocketAndStream" width="414" height="672"/>
+    </resources>
+</document>
